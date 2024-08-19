@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> Second Generation of Computers </title>
+    <link rel="stylesheet" href="gen.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="part header">
+            <div class="htitle">
+                 <a href="index.html#genshow"> <button> Back </button> </a> 
+                <h1> EVOLUTION OF COMPUTERS: 1956 - 1963 AD </h1>
+            </div>
+            <div class="headtitle">
+                <h1> SECOND GENERATION </h1>
+            </div>
+            <div class="headpic">
+                <img src="secondgen/f1.jpg">
+            </div>
+            <div class="headcontent">
+                <p>The interest in computer technology got fast after the first-generation computers. It was the generation of Transistorized Computers. Transistors replaced vacuum tubes from the first generation computers. As a result, first-generation computers were replaced by second-generation computers. The transistors were more reliable than vacuum tubes, smaller in size, faster in speed, and cheaper than first-generation computers. Magnetic drums are replaced by magnetic disks and magnetic tape for secondary storage. As a result, the size of the machines began shrinking.  </p>
+            </div>
+        </div>
+
+        <!-- OVERVIEW -->
+        <div class="part overview">
+            <div class="oheader reveal">
+                <h2> OVERVIEW </h2>
+            </div>
+            <div class="overview-container reveal">
+                <div class="features">
+                    <h1> FEATURES </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> It has transistors that make the size smaller than the first-generation computer. </li>
+                            <li> The computer was much faster, more reliable, and better speed and could handle enormous data than first-generation computers. </li>
+                            <li> The machine-level language was replaced by assembly language and machine-independent language. </li>
+                            <li> The significant change is in speed from millisecond to microsecond. </li>
+                            <li> The computer consumes less electrical power than a first-generation computer </li>
+                            <li> The computer is widely used in commercial areas. </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="limitations">
+                    <h1> LIMITATIONS </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> It still used a cooling system to cool down the computer. </li>
+                            <li> It needs constant maintenance. </li>
+                            <li> Punch cards are still used for inputs. </li>
+                            <li> It was still costly and versatile. </li>
+                            <li> The computers were still relatively large and lacked the portability that we associate with modern computing devices. </li>
+                            <li> Access to computers during the second generation was primarily limited to trained professionals and institutions. </li>
+                            <li> The computers primarily used batch processing systems, and it was less interactive than the real-time processing we experience today.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXAMPLES -->
+        <div class="examples">   
+            <div class="exampletxt reveal">
+                <h2> EXAMPLES </h2>
+            </div>
+            <div class="example-slide reveal">
+                <div class="exslide active">
+                    <div class="aslider active">
+                        <div class="text">
+                            <h2> IBM 1401 (International Business Machines) (1959) </h2>
+                            <p> The first relatively affordable and widely popular mainframe, the IBM 1401 Data Processing System has been called “the Model T of the computer industry.” Just as Henry Ford introduced the automobile to the masses, the IBM 1401 opened the information age to thousands of small and medium-size businesses.   
+                            </br></br>
+                            Introduced in 1959, the IBM 1401 quickly made inroads into the business community. By the mid-1960s, it comprised more than half of the world’s computers. The 1401 family spawned an entire generation of programmers who first learned computing on these machines. <p>
+                        </div>
+                        <div class="picture">
+                            <img src="secondgen/IBM1401.jpg">
+                        </div>
+                    </div> 
+          
+        
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> CDC 3600 (Control Data Corporation) (1963) </h1> </h2>
+                            <p> In the midst of the 1960s, when space exploration was making headway and technological advances were shaping the future, the Control Data Corporation (CDC) unveiled a marvel of computation - the CDC 3600 supercomputer. This supercomputer was not just any piece of machinery; it played a pivotal role in post-flight data processing at NASA's Manned Space Center located near Houston, Texas.   
+                            </br></br>
+                            The CDC 3600 had 32,700 48-bit words of magnetic core memory and supported a FORTRAN compiler.It only had 8K words of core memory, 2 or 3 tape drives, and 2 disk drives. It also had a card reader and a drum printer. </p>
+                        </div>
+                        <div class="picture">
+                            <img src="secondgen/CDC3600.png">
+                        </div>
+                    </div>
+        
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> Honeywell 200 (1963) </h2>
+                            <p> The Honeywell 200 was a character-oriented two-address commercial computer introduced by Honeywell in December 1963, the basis of later models in Honeywell 200 Series and the character processor of the Honeywell 8200 (1968). Its memory consisted of individually addressed characters, each composed of six data bits, two punctuation bits and a parity bit.  
+                            </br></br>
+                            Introduced to compete with IBM's 1401, the H200 was two or three times faster and, with software support, most of the time could execute IBM 1401 programs without need for their recompilation or reassembly. </p>
+                        </div>
+                        <div class="picture">
+                            <img src="secondgen/Honeywell200.jpg">
+                        </div>
+                    </div>
+        
+                    <div class="navigation">
+                        <div class="btn active"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        // for buttons examples
+            var slides = document.querySelectorAll('.aslider')
+            var btns =document.querySelectorAll('.btn')
+            let currentSlide = 1;
+            
+            var manualNav= function(manual){
+                slides.forEach((slide) =>{
+                    slide.classList.remove('active');
+                })
+            
+                btns.forEach((btn) =>{
+                    btn.classList.remove('active');
+                })
+            
+                slides[manual].classList.add('active')
+                btns[manual].classList.add('active')
+            }
+            
+            btns.forEach((btn,i) => {
+                btn.addEventListener("click", () =>{
+                    manualNav(i);
+                    currentSlide = i;
+                })
+            })
+            
+            var repeat = function(activeClass){
+                let active = document.getElementsByClassName('active')
+                let i = 1;
+            
+                var repeater = () => {
+                    setTimeout(function(){
+            
+                        slides.forEach((slide) =>{
+                            slide.classList.remove('active');
+                        })
+                    
+                        btns.forEach((btn) =>{
+                            btn.classList.remove('active');
+                        })
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+            
+                        if(slides.length == i){
+                            i=0
+                        }
+            
+                        if(i >= slides.length){
+                            return;
+                        }
+                        repeater();
+                    }, 10000);
+                }
+                repeater();
+            }
+            repeat();
+
+            //for scroll reveal//
+
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 80;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
+
+        

@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+/* ------------ 1st page ------------ */
+.part{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+.part h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    background: #F4AE45;
+    color: black;
+    
+}
+.headtitle h1{
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    text-align: center; 
+    margin-top: -30px;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.headpic img{
+    width: 100%;
+    height: 27rem;
+    margin: 10px 0;
+    padding: 0 90px;
+}
+.headcontent p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: -0.36px;
+    padding: 0 90px;
+}
+.htitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.htitle h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+button{
+    text-decoration: none;
+    color: #F4AE45;
+    font-size: 18px; 
+    font-weight: 700;
+    font-family: 'Montserrat';
+    background-color: #000000;
+    padding: 5px 20px;
+    border-radius: 10px;
+
+}
+
+/* ------------ 2nd page ------------ */
+.overview{
+    background: #BD682D;
+    color: black;
+    flex-direction: column;
+}
+.overview-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 100px;
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+.oheader{
+    padding-left: 47px;
+    display: flex;
+}
+.features{
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+.features h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.features ul li{
+    font-size: 22px;
+    line-height: 32px; 
+    letter-spacing: -0.36px;
+    font-weight: 500; 
+}
+.limitations{
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+.limitations h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.limitations ul li{
+    font-size: 22px;
+    line-height: 32px; 
+    letter-spacing: -0.36px;
+    font-weight: 500;
+}
+.ocontent{
+    background-color: #fff;
+    padding-left: 70px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* ------------ 3rd page ------------ */
+.examples{
+    position: relative;
+    background: #4D9D98;
+    color: black;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.exampletxt{
+    position: flex;
+    font-size: 35px;
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+.exslide{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-left: 75px;
+    bottom: 100px;
+}
+
+.exslide .aslider{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 100%);
+}
+
+.exslide .aslider.active{
+    clip-path: circle(300% at 0 100%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+
+.example-slide .text{
+    position: absolute;
+    top: 70px;
+    height: 525px;
+    width: 1370px;
+    margin-top: 50px;
+    background-color:#C4DAD2;
+}  
+
+.example-slide h2 {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.example-slide p {
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 30px;
+    margin-left: 41px;
+    margin-right: 122px;
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 700px;
+}
+
+.example-slide .picture img{
+    height: 400px;
+    width: 545px;
+    position: relative;
+    top: 225px;
+    left: 780px;
+    z-index:1;
+}
+
+.exslide .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    left: 650px;
+    top: 660px;
+}
+
+.exslide .navigation .btn{
+    background: white;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.exslide .navigation .btn.active{
+    background: #8cf5ce;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+/* reveal elements*/
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);  
+    opacity: 1;
+}

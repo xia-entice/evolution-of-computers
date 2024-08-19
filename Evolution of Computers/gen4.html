@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> Fourth Generation of Computers </title>
+    <link rel="stylesheet" href="gen.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="part header">
+            <div class="htitle">
+                 <a href="index.html#genshow"> <button> Back </button> </a> 
+                <h1> EVOLUTION OF COMPUTERS: 1971 - PRESENT </h1>
+            </div>
+            <div class="headtitle">
+                <h1> FOURTH GENERATION </h1>
+            </div>
+            <div class="headpic">
+                <img src="fourthgen/f1.ppm">
+            </div>
+            <div class="headcontent">
+                <p> The fourth-generation computers were developed from 1971 to 1990 AD. The present-day computer we see is the fourth generation of computers. Large Scale Integration (LSI) was acknowledged in this generation- something which could hold hundreds of components on one chip, and Very Large Scale Integration (VLSI), which embraced thousand of components on one silicon chip. In this generation, the concept of computer networks and CD-ROMS come into existence. </p>
+            </div>
+        </div>
+
+        <!-- OVERVIEW -->
+        <div class="part overview">
+            <div class="oheader reveal">
+                <h2> OVERVIEW </h2>
+            </div>
+            <div class="overview-container reveal">
+                <div class="features">
+                    <h1> FEATURES </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> Computer sizes change from desktop to laptop and from laptop to palmtop. </li>
+                            <li> Electronic Mail (E-mail) and the Internet were developed in this generation. </li>
+                            <li> The computer is used for all scientific, engineering, and commercial purposes. </li>
+                            <li> The computer has GUI (Graphical User Interface) and is user-friendly. </li>
+                            <li> They emerged as single-board computers and a single-chip processor called Microprocessors. </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="limitations">
+                    <h1> LIMITATIONS </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> They were highly sophisticated. </li>
+                            <li> The manufacturing of a Very Large-Scale Integration Chip needed very advanced technology. </li>
+                            <li> Large-scale data processing and storage capabilities were not as expansive as they are in contemporary computers. </li>
+                            <li> Compatibility issues existed between different manufacturers' systems and peripherals.  </li>
+                            <li> Interconnecting computers and establishing seamless communication still posed challenges. </li>  
+                            <li> Systems were more vulnerable to unauthorized access, and encryption techniques were not as advanced as those developed in later generations. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXAMPLES -->
+        <div class="examples">   
+            <div class="exampletxt reveal">
+                <h2> EXAMPLES </h2>
+            </div>
+            <div class="example-slide reveal">
+                <div class="exslide active">
+                    <div class="aslider active">
+                        <div class="text">
+                            <h2> Macintosh PowerBook 100 (1991) </h2>
+                            <p> The PowerBook 100 is a portable subnotebook personal computer designed and manufactured by Sony for Apple Computer and introduced on October 21, 1991, at the COMDEX computer expo in Las Vegas, Nevada. Priced at US$2,500 with external floppy drive, the PowerBook 100 was the low-end model of the first three simultaneously released PowerBooks.   
+                            </br></br>
+                            Its CPU and overall speed closely resembled those of its predecessor, the Macintosh Portable. It had a Motorola 68000 processor at 16 MHz, 2-8 megabytes (MB) of RAM, and the System 7.0.1 operating system. <p>
+                        </div>
+                        <div class="picture">
+                            <img src="fourthgen/powerbook100.jpg">
+                        </div>
+                    </div> 
+          
+        
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> IBM Personal Computer (1981)  </h1> </h2>
+                            <p> The IBM Personal Computer (model 5150, commonly known as the IBM PC) is the first microcomputer released in the IBM PC model line and the basis for the IBM PC compatible de facto standard. Released on August 12, 1981, it was created by a team of engineers and designers directed by William C. Lowe and Philip Don Estridge in Boca Raton, Florida.   
+                            </br></br>
+                            The PC had a substantial influence on the personal computer market. The specifications of the IBM PC became one of the most popular computer design standards in the world. </p>
+                        </div>
+                        <div class="picture">
+                            <img src="fourthgen/IBM PC.jpg">
+                        </div>
+                    </div>
+        
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> Apple II </h2>
+                            <p> The Apple II, introduced by Apple in 1977, played a crucial role in popularizing personal computing during the 4th generation. It was one of the first successful mass-produced microcomputers, offering color graphics and support for the BASIC programming language.   
+                            </br></br>
+                            In terms of ease of use, features, and expandability, the Apple II was a major advancement over its predecessor, the Apple I, a limited-production bare circuit board computer for electronics hobbyists. Through 1988, a number of models were introduced, with the most popular, the Apple IIe, remaining relatively unchanged into the 1990s. </p>
+                        </div>
+                        <div class="picture">
+                            <img src="fourthgen/apple2.png">
+                        </div>
+                    </div>
+        
+                    <div class="navigation">
+                        <div class="btn active"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        // for buttons examples
+            var slides = document.querySelectorAll('.aslider')
+            var btns =document.querySelectorAll('.btn')
+            let currentSlide = 1;
+            
+            var manualNav= function(manual){
+                slides.forEach((slide) =>{
+                    slide.classList.remove('active');
+                })
+            
+                btns.forEach((btn) =>{
+                    btn.classList.remove('active');
+                })
+            
+                slides[manual].classList.add('active')
+                btns[manual].classList.add('active')
+            }
+            
+            btns.forEach((btn,i) => {
+                btn.addEventListener("click", () =>{
+                    manualNav(i);
+                    currentSlide = i;
+                })
+            })
+            
+            var repeat = function(activeClass){
+                let active = document.getElementsByClassName('active')
+                let i = 1;
+            
+                var repeater = () => {
+                    setTimeout(function(){
+            
+                        slides.forEach((slide) =>{
+                            slide.classList.remove('active');
+                        })
+                    
+                        btns.forEach((btn) =>{
+                            btn.classList.remove('active');
+                        })
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+            
+                        if(slides.length == i){
+                            i=0
+                        }
+            
+                        if(i >= slides.length){
+                            return;
+                        }
+                        repeater();
+                    }, 10000);
+                }
+                repeater();
+            }
+            repeat();
+
+            //for scroll reveal//
+
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 80;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
+
+        

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> First Generation of Computers </title>
+    <link rel="stylesheet" href="gen.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="part header">
+            <div class="htitle">
+                 <a href="index.html#genshow"> <button> Back </button> </a> 
+                <h1> EVOLUTION OF COMPUTERS: 1945 - 1956 AD </h1>
+            </div>
+            <div class="headtitle">
+                <h1> FIRST GENERATION </h1>
+            </div>
+            <div class="headpic">
+                <img src="firstgen/f1.jpg">
+            </div>
+            <div class="headcontent">
+                <p>First-generation computers bore little resemblance to today’s computers, either in appearance or performance. The first generation of computers occurred from 1940 AD to 1956 AD and was extremely large in size. The internal workings of the computers at that time were unsophisticated. These early machines required vacuum tubes that worked as switches, amplifiers, and magnetic drums for memory. The paper tapes and punch cards were used for input and printouts for output.</p>
+            </div>
+        </div>
+
+        <!-- OVERVIEW -->
+        <div class="part overview">
+            <div class="oheader reveal">
+                <h2> OVERVIEW </h2>
+            </div>
+            <div class="overview-container reveal">
+                <div class="features">
+                    <h1> FEATURES </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> It was a large mainframe built with vacuum tube technology. </li>
+                            <li> It occupied large space, was low efficiency and unreliable due to low accuracy. </li>
+                            <li> The power consumption was very high, and it produced massive heat. </li>
+                            <li> The operation of speed was in milliseconds. </li>
+                            <li> It was used only for scientific or research purposes. </li>
+                            <li> Low-level programming language was used in computers. </li>
+                            <li> They were very slow. </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="limitations">
+                    <h1> LIMITATIONS </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> The computer needed an air conditioner room, and constant maintenance. </li>
+                            <li> They were not portable. </li>
+                            <li> It was expensive commercial product. </li>
+                            <li> They have minimum programming capabilities. </li>
+                            <li> The computers have limited uses only. </li>
+                            <li> The computers had very limited memory capacity. </li>
+                            <li> The computers had limited processing speeds compared to modern standards. </li>
+                            <li> They were not accessible to the general public. </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXAMPLES -->
+        <div class="examples">   
+            <div class="exampletxt reveal">
+                <h2> EXAMPLES </h2>
+            </div>
+            <div class="example-slide reveal">
+                <div class="exslide active">
+                    <div class="aslider active">
+                        <div class="text">
+                            <h2>ENIAC (Electronic Numerical Integrator and Calculator) (1943-46 AD) </h2>
+                            <p> The Electronic Numerical Integrator And Calculator (ENIAC) was the first all-electronic computer. It was constructed at the Moore School of Engineering of the University of Pennsylvania, U.S.A., by a design team led by Professors J. Presper Eckert and John Mauchly.  
+                            </br></br>
+                            The team developed ENIAC because of military needs. It was used for many years to solve ballistic-related problems. ENIAC took up wall space in a 20 x 40 square feet room and used 18,000 vacuum tubes. It could add two numbers in 200 microseconds and multiply them in 2000 microseconds. <p>
+                        </div>
+                        <div class="picture">
+                            <img src="firstgen/eniac.png">
+                        </div>
+                    </div> 
+          
+        
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> EDVAC (Electronic Discrete Variable Automatic) (1946-52 AD) </h1> </h2>
+                            <p> EDVAC (Electronic Discrete Variable Automatic Computer) was one of the earliest electronic computers. It was built by Moore School of Electrical Engineering, Pennsylvania. Along with ORDVAC, it was a successor to the ENIAC. Unlike ENIAC, it was binary rather than decimal, and was designed to be a stored-program computer.   
+                            </br></br>
+                            Functionally, EDVAC was a binary serial computer with automatic addition, subtraction, multiplication, programmed division and automatic checking with an ultrasonic serial memory having a capacity of 1,024 44-bit words. </p>
+                        </div>
+                        <div class="picture">
+                            <img src="firstgen/edvac.webp">
+                        </div>
+                    </div>
+        
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> UNIVAC (Universal Automatic Computers) (1951) </h2>
+                            <p> The UNIVAC was the first digital computer that was not ―one of a kind. It was designed as a commercial data-processing computer, intended to replace the punched-card accounting machines of the day. It could read 7,200 decimal digits per second (it did not use binary numbers), making it by far the fastest business machine yet built.  
+                            </br></br>
+                            Although manufactured by Remington Rand, the machine was often mistakenly referred to as “the IBM Univac." Univac computers were used in many different applications but utilities, insurance companies and the US military were major customers. </p>
+                        </div>
+                        <div class="picture">
+                            <img src="firstgen/univac.jpg">
+                        </div>
+                    </div>
+        
+                    <div class="navigation">
+                        <div class="btn active"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        // for buttons examples
+            var slides = document.querySelectorAll('.aslider')
+            var btns =document.querySelectorAll('.btn')
+            let currentSlide = 1;
+            
+            var manualNav= function(manual){
+                slides.forEach((slide) =>{
+                    slide.classList.remove('active');
+                })
+            
+                btns.forEach((btn) =>{
+                    btn.classList.remove('active');
+                })
+            
+                slides[manual].classList.add('active')
+                btns[manual].classList.add('active')
+            }
+            
+            btns.forEach((btn,i) => {
+                btn.addEventListener("click", () =>{
+                    manualNav(i);
+                    currentSlide = i;
+                })
+            })
+            
+            var repeat = function(activeClass){
+                let active = document.getElementsByClassName('active')
+                let i = 1;
+            
+                var repeater = () => {
+                    setTimeout(function(){
+            
+                        slides.forEach((slide) =>{
+                            slide.classList.remove('active');
+                        })
+                    
+                        btns.forEach((btn) =>{
+                            btn.classList.remove('active');
+                        })
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+            
+                        if(slides.length == i){
+                            i=0
+                        }
+            
+                        if(i >= slides.length){
+                            return;
+                        }
+                        repeater();
+                    }, 10000);
+                }
+                repeater();
+            }
+            repeat();
+
+            //for scroll reveal//
+
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 80;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        
+        
+    </script>
+    
+</body>
+</html>
+
+        

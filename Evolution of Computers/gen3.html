@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> Third Generation of Computers </title>
+    <link rel="stylesheet" href="gen.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="part header">
+            <div class="htitle">
+                 <a href="index.html#genshow"> <button> Back </button> </a> 
+                <h1> EVOLUTION OF COMPUTERS: 1964 - 1971 AD </h1>
+            </div>
+            <div class="headtitle">
+                <h1> THIRD GENERATION </h1>
+            </div>
+            <div class="headpic">
+                <img src="thirdgen/f1.webp">
+            </div>
+            <div class="headcontent">
+                <p> Third-generation computers were characterized by the invention of Integrated Circuits (ICs). IC is a silicon chip made from quartz where multiple transistors were placed over it. Robert Noyce and Jack Kilby developed IC at Texas Instrument in 1958-1959. Later, even more components were rigged onto a single chip, called a semiconductor. It reduced the size even further in the third generation computers. Computers’ weight and power consumption decreased, and the speed boosted. </p>
+            </div>
+        </div>
+
+        <!-- OVERVIEW -->
+        <div class="part overview">
+            <div class="oheader reveal">
+                <h2> OVERVIEW </h2>
+            </div>
+            <div class="overview-container reveal">
+                <div class="features">
+                    <h1> FEATURES </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> IC was used in the computer, replacing transistors. </li>
+                            <li> The mass audience was using computers. </li>
+                            <li> The computers were highly reliable, relatively inexpensive, faster, and more accurate. </li>
+                            <li> It can be operated with low energy, and maintenance cost was low also. </li>
+                            <li> The keyboard and monitor were introduced for data input and output. </li>
+                            <li> It had a more prominent space capacity. </li>
+                            <li> A computer has more high-level computer language such as ALGOL-68, FORTRAN-II TO IV, BASIC, COBOL, PASCAL PL/1. </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="limitations">
+                    <h1> LIMITATIONS </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> Still, the air conditioner is used for cooling purposes. </li>
+                            <li> Highly sophisticated technology was required for the maintenance of the ICs chip. </li>
+                            <li> The technology was not yet widely accessible to small businesses or individuals. </li>
+                            <li> For third-generation computers, formal training was needed </li>
+                            <li> The computers were still relatively large and lacked the portability that we associate with modern computing devices. </li>
+                            <li> Input and output devices continued to be somewhat limited in variety and functionality </li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXAMPLES -->
+        <div class="examples">   
+            <div class="exampletxt reveal">
+                <h2> EXAMPLES </h2>
+            </div>
+            <div class="example-slide reveal">
+                <div class="exslide active">
+                    <div class="aslider active">
+                        <div class="text">
+                            <h2> IBM System/370 (International Business Machines) (1970) </h2>
+                            <p> The IBM System/370 (S/370) is a model range of IBM mainframe computers announced on June 30, 1970. The series mostly maintains backward compatibility with the S/360, allowing an easy migration path for customers; this, plus improved performance, were the dominant themes of the product announcement.  
+                            </br></br>
+                            It is one of the most successful and enduring mainframe architectures as it was versatile and suitable for both commercial and scientific computing applications. It found extensive use in industries such as finance, government, and research. <p>
+                        </div>
+                        <div class="picture">
+                            <img src="thirdgen/IBM370.jpg">
+                        </div>
+                    </div> 
+          
+        
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> UNIVAC AC 9000 (1970) </h1> </h2>
+                            <p> The UNIVAC 9000 series is a discontinued line of computers introduced by Sperry Rand in the mid-1960s to compete with the low end of the IBM System/360 series. The 9200 and 9300 (which differ only in CPU speed) implement the same restricted 16-bit subset of the System/360 instruction set as the IBM 360/20, while the UNIVAC 9400 implements a subset of the full 32-bit System/360 instruction set. The 9400 was roughly equivalent to the IBM 360/30.   
+                            </br></br>
+                            In 1972, UNIVAC stopped development of its 9000 series systems, in favor of hardware acquired from RCA, now called UNIVAC Series 90. </p>
+                        </div>
+                        <div class="picture">
+                            <img src="thirdgen/univac9000.jpg">
+                        </div>
+                    </div>
+        
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> ICL 2900 Series (1974) </h2>
+                            <p> The ICL 2900 Series was a range of mainframe computer systems announced by the British manufacturer ICL on 9 October 1974. The range was not designed to be compatible with any previous machines produced by the company, nor for compatibility with any competitor's machines: rather, it was conceived as a synthetic option, combining the best ideas available from a variety of sources.  
+                            </br></br>
+                            In marketing terms, the 2900 Series was superseded by Series 39 in the mid-1980s; however, Series 39 was essentially a new set of machines implementing the 2900 Series architecture, as were subsequent ICL machines branded "Trimetra". </p>
+                        </div>
+                        <div class="picture">
+                            <img src="thirdgen/icl2900.jpg">
+                        </div>
+                    </div>
+        
+                    <div class="navigation">
+                        <div class="btn active"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        // for buttons examples
+            var slides = document.querySelectorAll('.aslider')
+            var btns =document.querySelectorAll('.btn')
+            let currentSlide = 1;
+            
+            var manualNav= function(manual){
+                slides.forEach((slide) =>{
+                    slide.classList.remove('active');
+                })
+            
+                btns.forEach((btn) =>{
+                    btn.classList.remove('active');
+                })
+            
+                slides[manual].classList.add('active')
+                btns[manual].classList.add('active')
+            }
+            
+            btns.forEach((btn,i) => {
+                btn.addEventListener("click", () =>{
+                    manualNav(i);
+                    currentSlide = i;
+                })
+            })
+            
+            var repeat = function(activeClass){
+                let active = document.getElementsByClassName('active')
+                let i = 1;
+            
+                var repeater = () => {
+                    setTimeout(function(){
+            
+                        slides.forEach((slide) =>{
+                            slide.classList.remove('active');
+                        })
+                    
+                        btns.forEach((btn) =>{
+                            btn.classList.remove('active');
+                        })
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+            
+                        if(slides.length == i){
+                            i=0
+                        }
+            
+                        if(i >= slides.length){
+                            return;
+                        }
+                        repeater();
+                    }, 10000);
+                }
+                repeater();
+            }
+            repeat();
+
+            //for scroll reveal//
+
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 80;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
+
+        

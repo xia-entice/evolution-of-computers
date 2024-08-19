@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> Fifth Generation of Computers </title>
+    <link rel="stylesheet" href="gen.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="part header">
+            <div class="htitle">
+                 <a href="index.html#genshow"> <button> Back </button> </a> 
+                <h1> EVOLUTION OF COMPUTERS: PRESENT - FUTURE </h1>
+            </div>
+            <div class="headtitle">
+                <h1> FIFTH GENERATION </h1>
+            </div>
+            <div class="headpic">
+                <img src="fifthgen/f1.webp">
+            </div>
+            <div class="headcontent">
+                <p> Defining the fifth generation of computers is tricky because the field is still in its infancy. Tomorrow’s computers would be characterized by Artificial Intelligence (AI) and ULSI (Ultra Large-Scale Integration) technology that can store millions of components in a single chip. An example of Al is Expert Systems. Computers could be developed to think and sense much the same way as humans. Computers would be able to accept verbal words as input (voice recognition). </p>
+            </div>
+        </div>
+
+        <!-- OVERVIEW -->
+        <div class="part overview">
+            <div class="oheader reveal">
+                <h2> OVERVIEW </h2>
+            </div>
+            <div class="overview-container reveal">
+                <div class="features">
+                    <h1> FEATURES </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> These machines will incorporate ULSI (Ultra Large Scale Integration). </li>
+                            <li> The speed of this generation of computers is going to be very high. </li>
+                            <li> Bio-chips and Gallium Arsenide (GaAs) are used as memory devices. </li>
+                            <li> The concept of AI (Artificial Intelligence) has been introduced. </li>
+                            <li> The computers can understand human language and recognize pictures and graphs. </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="limitations">
+                    <h1> LIMITATIONS </h1>
+                    <div class="ocontent">
+                        <ul>
+                            <li> The computer will overtake all employment, creating unemployment in the country. </li>
+                            <li> Advances in computing technology, such as quantum computing or other novel paradigms, may introduce greater complexity in terms of design, programming, and maintenance. </li>
+                            <li> Cutting-edge technologies often come with high development and implementation costs. </li>
+                            <li> The complexity of securing them against cyber threats may increase. New technologies might introduce new vulnerabilities that need to be addressed. </li>
+                            <li> Artificial intelligence (AI) and advanced robotics may raise ethical concerns.  </li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXAMPLES -->
+        <div class="examples">   
+            <div class="exampletxt reveal">
+                <h2> EXAMPLES </h2>
+            </div>
+            <div class="example-slide reveal">
+                <div class="exslide active">
+                    <div class="aslider active">
+                        <div class="text">
+                            <h2> Param Vikram 1000 </h2>
+                            <p> In the 5th generation, the Param Vikram 1000 stands out as a supercomputer developed by India. Known for its high computational power, the Param Vikram 1000 contributes to scientific research and complex simulations. Designed for parallel processing, it reflects advancements in computing power and capabilities, showcasing India's commitment to technological innovation on the global stage.  
+                            </br></br>
+                            The Param Vikram-1000 is the 14th fastest supercomputer in India that has 108 computing nodes dispense 7296 CPU cores, 2,76,480 GPU Cores, 74TB of RAM and 1 PB of high performance Lustre parallel filesystem. <p>
+                        </div>
+                        <div class="picture">
+                            <img src="fifthgen/PARAM 1000.jpg">
+                        </div>
+                    </div> 
+          
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> Google's Quantum Computer (2019) </h1> </h2>
+                            <p> Google's quantum computer, named Sycamore, made headlines in 2019 for achieving quantum supremacy. Quantum computers leverage the principles of quantum mechanics to perform calculations that would be practically impossible for classical computers. Sycamore demonstrated the ability to solve a specific problem faster than the most advanced classical supercomputers.  
+                            </br></br>
+                            While quantum computing is still in its early stages, Google's achievement marked a significant breakthrough with potential implications for solving complex problems in fields such as cryptography, optimization, and materials science. </p>
+                        </div>
+                        <div class="picture">
+                            <img src="fifthgen/googlequantum.jpg">
+                        </div>
+                    </div>
+        
+                    <div class="aslider">
+                        <div class="text">
+                            <h2> Cray T3E (1995) </h2>
+                            <p>  The Cray T3E was a high-performance parallel supercomputer developed by Cray Research in the mid-1990s. It was designed for scientific and engineering applications that required massive computational power. The T3E employed a scalable architecture, allowing multiple processors to work together seamlessly.
+                            </br></br>
+                            It played a significant role in advancing research in fields such as climate modeling, materials science, and fluid dynamics. The Cray T3E exemplified the capabilities of parallel processing for solving complex scientific problems. </p>
+                        </div>
+                        <div class="picture">
+                            <img src="fifthgen/crayT3E.jpg">
+                        </div>
+                    </div>
+        
+                    <div class="navigation">
+                        <div class="btn active"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        // for buttons examples
+            var slides = document.querySelectorAll('.aslider')
+            var btns =document.querySelectorAll('.btn')
+            let currentSlide = 1;
+            
+            var manualNav= function(manual){
+                slides.forEach((slide) =>{
+                    slide.classList.remove('active');
+                })
+            
+                btns.forEach((btn) =>{
+                    btn.classList.remove('active');
+                })
+            
+                slides[manual].classList.add('active')
+                btns[manual].classList.add('active')
+            }
+            
+            btns.forEach((btn,i) => {
+                btn.addEventListener("click", () =>{
+                    manualNav(i);
+                    currentSlide = i;
+                })
+            })
+            
+            var repeat = function(activeClass){
+                let active = document.getElementsByClassName('active')
+                let i = 1;
+            
+                var repeater = () => {
+                    setTimeout(function(){
+            
+                        slides.forEach((slide) =>{
+                            slide.classList.remove('active');
+                        })
+                    
+                        btns.forEach((btn) =>{
+                            btn.classList.remove('active');
+                        })
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+            
+                        if(slides.length == i){
+                            i=0
+                        }
+            
+                        if(i >= slides.length){
+                            return;
+                        }
+                        repeater();
+                    }, 10000);
+                }
+                repeater();
+            }
+            repeat();
+
+            //for scroll reveal//
+
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 80;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
+
+        
